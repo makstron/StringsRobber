@@ -1,14 +1,39 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = "1.4.30"
+    ext.kotlin_version = '1.4.31'
     repositories {
         google()
         jcenter()
+        maven { url "https://maven.google.com" }
+        mavenCentral()
+        flatDir dirs: "libs"
+        flatDir dirs: "build/libs"
+//        flatDir dirs: "C:\\GradleProjects\\StringsRobber\\sync_help\\build\\libs"
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath 'com.android.tools.build:gradle:4.1.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath gradleApi() //for write plugins directly inside gradle file
+//        classpath fileTree(dir: 'C:\\GradleProjects\\StringsRobber\\sync_help\\build\\libs', include: ['*.aar', '*.jar'], exclude: [])
+//        classpath fileTree(dir: 'libs', include: ['*.jar'])
+//        classpath fileTree(include: ['*.jar'], dir: 'app/libs')
+//        classpath files('app/libs/sync_help-all.jar')
 
+        classpath('com.google.guava:guava'){
+            version {
+                strictly '30.1.1-jre'
+            }
+        }
+        classpath files('app/libs/string_robber-0.0.2.jar')
+        classpath 'com.google.cloud:google-cloud-translate:1.96.0'
+        classpath 'com.google.cloud:libraries-bom:19.2.1'
+
+
+
+
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+//        classpath project(':sync_help')
+//        classpath "com.klim.stealler"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -18,6 +43,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://maven.google.com" }
+        mavenCentral()
     }
 }
 

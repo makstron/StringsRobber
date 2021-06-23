@@ -1,7 +1,10 @@
+import com.klim.stealler.TranslateResourcesTask
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'StringRobber'
+//    id 'StringRobber'
+    id 'string_robber'
 }
 
 android {
@@ -33,14 +36,70 @@ android {
     }
 }
 
+string_robber {
+    message = 'Hi from Klim'
+}
+
+task translateResourcesDebug2(type: TranslateResourcesTask) { //StringRobber
+    mode = TranslateResourcesTask.Companion.TranslateMode.SOFT
+    keepCase = true
+    stringInputFilePath = "src\\main\\res\\values\\strings.xml"
+    stringOutputFilePath = "src\\main\\res\\values-ru\\strings.xml"
+    srcLanguage = "en"
+    targetLanguage = "ru"
+}
+
 dependencies {
+//    classpath "your.group:your-plugin:1.0.0"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
+//    implementation files('libs\\sync_help-all.jar')
+//    implementation files('libs\\sync_help-all.jar')
+//    implementation files('libs\\sync_help.jar')
+//    implementation fileTree(dir: 'C:\\GradleProjects\\StringsRobber\\sync_help\\build\\libs', include: ['*.aar', '*.jar'], exclude: [])
+//    implementation files('libs\\sync_help.jar')
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+//////////
+
+class GreetingPluginExtension {
+    String message = 'Hello from GreetingPlugin'
+}
+
+//class GreetingPlugin implements Plugin<Project> {
+//    @Override
+//    void apply(Project project) {
+//        // Add the 'greeting' extension object
+//        def extension = project.extensions.create('greeting', GreetingPluginExtension)
+//        project.task('hello') {
+//            doLast {
+//                println extension.message
+//            }
+//        }
+//    }
+//}
+//
+//// Apply the plugin
+//apply plugin: GreetingPlugin
+//
+//// Configure the extension
+//greeting {
+//    message = 'Hi from Klim'
+//}
+
+//new GreetingPlugin().
+
+//plugins asasas(type: GreetingPlugin) {
+//
+//}
+//
+//task try_try(type: GreetingPlugin) {
+////    message = 'Hi from Klim'
+//}

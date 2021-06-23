@@ -1,0 +1,399 @@
+<resources>
+    <!-- Main -->
+    <string name="tap_twice">Нажмите дважды если вы хотите закрыть приложение</string>
+    <string name="current_version">Текущая версия %s</string>
+    <string name="new_current_version">Доступна новая версия %s</string>
+    <!-- //Main -->
+
+    <!-- Menu -->
+    <string name="menu_structures">Структуры</string>
+    <string name="menu_backups">Резервные копии</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_support">Поддержать проект</string>
+    <string name="menu_questions">Вопросы</string>
+    <string name="menu_feedback">Обратная связь</string>
+    <string name="menu_about">О приложении</string>
+    <!-- //Menu -->
+
+    <!-- Intro -->
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+    <string name="finish">Конец</string>
+    <string name="start_design">Начать проектирование</string>
+    <string name="intro_item_first_title">DbDesigner</string>
+    <string name="intro_item_first_description">The fast App for designing a database.\nIt is free, light and safety.</string> <!--//Easy to use, customable, cloud(acces to your structure from anywhere)-->
+    <string name="intro_item_fast_title">Быстрый</string>
+    <string name="intro_item_fast_description">DbDesigner работает быстро, вы можете работать и не ждать.</string>
+    <string name="intro_item_free_title">Свободный</string>
+    <string name="intro_item_free_description">DbDesigner бесплатен навсегда. \nБез рекламы. Без абонентской платы.</string>
+    <string name="intro_item_powerful_title">Мощный</string>
+    <string name="intro_item_powerful_description">DbDesigner не имеет ограничений на размер ваших баз данных или их количество.</string>
+    <string name="intro_item_secure_title">Безопасный</string>
+    <string name="intro_item_secure_description">Все ваши базы данных сохраняются только на вашем телефоне.</string>
+    <string name="intro_item_light_title">Легкий</string>
+    <string name="intro_item_light_description">Всего несколько мегабайт дают вам возможность создавать свои конструкции где угодно.</string>
+    <!-- // Intro -->
+
+    <!-- Structures -->
+    <string name="structures_title">Структуры</string>
+    <!-- Context Structure -->
+    <string name="clone_structure">Клонировать структуру</string>
+    <string name="ctx_edit">Редактировать</string>
+    <string name="ctx_clone">Клон</string>
+    <string name="ctx_delete">Удалить</string>
+    <!-- Create/Edit dialog -->
+    <string name="create_structure">Создать структуру</string>
+    <string name="edit_structure">Редактировать структуру</string>
+    <string name="structure_name">Название структуры</string>
+    <string name="structure_description">Описание структуры</string>
+    <string name="structure_rdbms">Система управления реляционными базами данных</string>
+    <!-- Clone dialog -->
+    <string name="structure_new_name">Название новой структуры</string>
+    <string name="structure_new_description">Описание новой структуры</string>
+    <!-- //Structures -->
+
+    <!-- Structure -->
+    <string name="structure_was_sawed">Структура БД была сохранена</string>
+    <string name="import_sql">Импорт с SQL</string>
+    <string name="export_sql">Экспорт в SQL</string>
+    <string name="export_jpg">Экспорт как изображение</string>
+    <string name="exit_do_not_save_changes">Уверены ли вы? Все ваши изменения не будут сохранены.</string>
+    <!-- Dialog Export Sql table -->
+    <string name="export_sql_title">Экспорт в SQL</string>
+    <string name="export_sql_select_language">SQL язык</string>
+    <string name="export_sql_include_keys_prim">Включить первичные ключи</string>
+    <string name="export_sql_include_keys_foreign">Включить внешние ключи</string>
+    <string name="export_sql_include_foreign_actions">Включить действия при "Удалении/Обновлении"</string>
+    <string name="export_sql_include_drop_table">Добавить удаление таблиц</string>
+    <string name="export_sql_include_table_descript_sql">Включить описание таблицы в SQL</string>
+    <string name="export_sql_include_columns_descript_sql">Включить описание колонок в SQL</string>
+    <string name="export_sql_include_table_descript">Включить описание таблицы</string>
+    <string name="export_sql_include_columns_descript">Включить описание колонок</string>
+    <string name="export_sql_include_table_location">Включить местоположение таблицы</string>
+    <string name="export_sql_include_table_color">Включить информацию о цвете</string>
+    <string name="export_sql_name_wrapper">Использовать обертку для имен</string>
+    <string name="export_sql_more_options">Показать больше настроек</string>
+    <string name="sql_export">Экспорт</string>
+    <string name="sql_was_copied_to_clipboard">Sql был скопирован в буфер обмена</string>
+    <string name="export_sql_select_target">Экспорт в</string>
+    <string name="export_sql_target_clipboard">Скопировать в буфер обмена</string>
+    <string name="export_sql_target_file">Сохранить в файл</string>
+    <string name="sql_was_exported_to_file">Sql был экспортирован в файл</string>
+    <!-- //Dialog Export Sql table -->
+    <!-- Dialog Export Image table -->
+    <string name="export_img_title">Экспорт в изображение</string>
+    <string name="draw_mini_map">Рисовать мини-карту?</string>
+    <string name="folder_for_save">Папка для сохранения</string>
+    <string name="select_folder">Изменить</string>
+    <string name="file_resolution">Расширение</string>
+    <string name="file_quality">Качество</string>
+    <string name="file_name">Имя файла</string>
+    <string name="you_cant_use_chars">Вы не можете использовать эти символы</string>
+    <string name="export">Экспорт</string>
+    <string name="img_was_created">Изображение было создано</string>
+    <string name="img_was_not_created">Изображение не было создано</string>
+    <!-- Dialog Export Image table -->
+    <!-- Dialog Import Sql table -->
+    <string name="import_sql_title">Импорт из SQL</string>
+    <string name="import_sql_supported">Поддерживаются только запросы типа \"создать\"</string>
+    <string name="your_sql">Ваш SQL</string>
+    <string name="write_your_sql_hint">Напишите ваш SQL здесь</string>
+    <string name="_paste">Вставить из буфера обмена</string>
+    <string name="sql_pasted">SQL вставлено</string>
+    <string name="empty_clipboard">Буфер обмена пуст</string>
+    <string name="clipboard_paste_error">Что-то случилось, я не могу вставить данные из буфера обмена</string>
+    <string name="_import">Импортировать</string>
+    <string name="sql_was_imported">Sql был импортирован</string>
+    <string name="sql_was_import_error">Sql не был импортирован. Проверьте свой Sql. Может быть есть ошибки</string>
+    <!-- //Dialog Import Sql table -->
+    <!-- Dialog choose create Table/Note  -->
+    <string name="dialog_add_choose_title">Выбирать</string>
+    <string name="dialog_add_choose_add_table">Добавить таблицу</string>
+    <string name="dialog_add_choose_add_note">Добавить заметку</string>
+    <!-- //Dialog choose create Table/Note  -->
+    <!-- Dialog Create/Edit table -->
+    <string name="create_table">Создать таблицу</string>
+    <string name="edit_table">Редактировать таблицу</string>
+    <string name="export_table_sql">Экспорт текущей таблицы в SQL</string>
+    <string name="sure_question">Вы уверены?</string>
+    <string name="name_not_empty">Название не должно быть пустым</string>
+    <string name="table_name">Название таблицы</string>
+    <string name="table_description">Описание таблицы</string>
+    <string name="table_header_color">Цвет заголовка таблицы</string>
+    <string name="add_column">Добавить колонку</string>
+    <string name="edit_column">Редактировать колонку</string>
+    <string name="column_add">Добавить колонку</string>
+    <string name="column_done">Выполнено</string>
+    <string name="column_delete">Удалить</string>
+    <string name="column_cancel">Отменить</string>
+    <string name="column_name">Название</string>
+    <string name="type">Тип</string>
+    <string name="size">Размер</string>
+    <string name="size_hint">Размер</string>
+    <string name="precision_hint">Точность</string>
+    <string name="enum_value">Значение</string>
+    <string name="enum_value_hint">\"Значение 1\", \"Значение_2\"</string>
+    <string name="_default">По умолчанию</string>
+    <string name="default_hint">Значение</string>
+    <string name="description">Описание</string>
+    <string name="description_hint">Описание</string>
+    <string name="column_color">Цвет колонки</string>
+    <string name="info">Информация</string>
+    <string name="primary_key">Первичный ключ</string>
+    <string name="allow_nulls">Разрешить нули</string>
+    <string name="unique">Уникальный</string>
+    <string name="auto_increment">Автоувеличение</string>
+    <string name="unsigned">Беззнаковый</string>
+    <string name="foreign_key">Внешний ключ</string>
+    <string name="ref_table">Реф. Таблица</string>
+    <string name="ref_field">Реф. поле</string>
+    <string name="on_delete">On Delete</string>
+    <string name="on_update">On Update</string>
+    <!-- //Dialog Create/Edit table -->
+    <!-- Dialog Create/Edit Note  -->
+    <string name="dialog_add_note_title_create">Создать заметку</string>
+    <string name="dialog_add_note_title_edit">Редактировать заметку</string>
+    <string name="dialog_add_note_title_label">Заглавие</string>
+    <string name="dialog_add_note_title_hint">Заглавие</string>
+    <string name="dialog_add_note_description_label">Описание</string>
+    <string name="dialog_add_note_description_hint">Описание</string>
+    <string name="dialog_add_note_color">Примечание цвет</string>
+    <string name="dialog_add_note_sure_question">Вы уверены?</string>
+    <string name="name_or_description_empty">Вы должны написать что-нибудь в заголовок или описание</string>
+    <!-- //Dialog Create/Edit Note  -->
+    <!-- //Structure -->
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_tab_general">Основные</string>
+    <string name="settings_tab_interface">Интерфейс</string>
+    <string name="settings_tab_map">Карта</string>
+    <string name="settings_tab_theme">Темы</string>
+    <!-- ** Settings General -->
+    <string name="language">Язык</string>
+    <string name="autosave">Автосохранение</string>
+    <string name="autosave_enabled">Включить автосохранение по таймеру</string>
+    <string name="autosave_before_exit">Автосохранение перед выходом</string>
+    <string name="autosave_period">Автосохранение период (сек)</string>
+    <string name="autosave_period_restriction">Значение между 15 и 1500</string>
+    <string name="autosave_message">Показать сообщение сохранения</string>
+    <string name="open_parameters">Параметры при открытии</string>
+    <string name="open_parameters_position">Открывать структуру на том же месте где она была перед выходом</string>
+    <string name="questions">Вопросы</string>
+    <string name="question_before_save">Показывать вопрос перед СОХРАНЕНИЕМ таблиц/колонок..</string>
+    <string name="question_before_save_description">Вопросы отображаются только в случае выявления изменений</string>
+    <string name="question_before_delete">Показывать вопрос перед УДАЛЕНИЕМ таблиц/колонок..</string>
+    <string name="question_before_cancel">Показывать вопрос перед ВЫХОДОМ из редактирования таблиц/колонок..</string>
+    <string name="question_before_cancel_description">Вопросы отображаются только в случае выявления изменений</string>
+    <string name="actions">Действия</string>
+    <string name="copy_data_type_size_from_primary">Скопируйте тип данных и размер из Primary ключа</string>
+    <string name="copy_data_type_size_from_primary_description">Когда вы выбираете колонку как Foreign ключ, тип/размер будут автоматически копироваться из Primary ключа</string>
+    <string name="double_tap_for_exit">Дважды нажмите для выхода</string>
+    <string name="linking_without_primary">Связывание со колонками без Primary key</string>
+    <string name="linking_without_primary_description">Разрешить связывание Foreign key со колонками без Primary key</string>
+    <!-- ** Settings  Interface-->
+    <string name="interfaces">Интерфейс</string>
+    <string name="show_button_navigate_to_start">Показывать кнопку навигации до начала</string>
+    <string name="show_buttons_zoom">Показывать кнопки масштаба</string>
+    <string name="mouse_zoom">Масштабирование мышкой</string>
+    <string name="mouse_zoom_description">Вращение колеса на 1 клик изменит зум на</string>
+    <string name="default_names_for_tables_columns">Имена по умолчанию для таблиц/колонок</string>
+    <string name="default_names_for_tables_columns_description">Сохранит таблицы/колонки с автоматически сгенерированным именем, если имя пустое</string>
+    <string name="compact_column_properties">Компактные свойства колонок</string>
+    <string name="save_column_buttons">Кнопки сохранения колонок в заголовке</string>
+    <!-- ** Settings  Map-->
+    <string name="colors">Пользовательские цвета</string>
+    <string name="color_lines">Цвет линии</string>
+    <string name="grid_color">Цвет сетки</string>
+    <string name="map_bg_color">Цвет фона карты</string>
+    <string name="elements">Элементы</string>
+    <string name="show_grid">Показать сетку</string>
+    <string name="show_mini_map">Показать мини-карту</string>
+    <string name="show_arrow">Показать стрелки</string>
+    <string name="show_foreign_key_icon">Показать значок внешнего ключа</string>
+    <string name="show_auto_increment_icon">Показать пиктограмму автоинкремента</string>
+    <string name="show_not_null_icon">Значок "Показывать не нулевой"</string>
+    <string name="show_default_values">Показать значение по умолчанию</string>
+    <string name="show_table_description">Показывать описание таблицы</string>
+    <string name="show_column_description">Показывать описание колонки</string>
+    <string name="show_data_type_size">Показать размер типа данных</string>
+    <string name="show_data_type">Показать тип данных</string>
+    <string name="print_table_shadow">Рисовать тень в таблиц</string>
+    <string name="print_table_shadow_description">Если включить, рисование может быть медленнее</string>
+    <string name="flip_arrows">Перевернуть стрелки</string>
+    <string name="flip_arrows_description">Показать стрелки рядом c foreign key</string>
+    <string name="line_type">Тип стрелки</string>
+    <string name="grid_cell_size">Размер ячейки сетки</string>
+    <string name="grid_size_limits">Значение между 10 и 1000</string>
+    <string name="sticky_grid">Липкая сетка</string>
+    <string name="sticky_grid_description">Прилипание таблиц / заметок к сетке при их перетаскивании</string>
+    <string name="sticky_grid_radius">Липкий радиус сетки</string>
+    <string name="sticky_grid_radius_description">Область, когда таблицы/заметки прилипают к линии сетки</string>
+    <!-- ** Settings  Theme-->
+    <string name="color_theme">Цветовая тема</string>
+    <!-- Dialog Change language -->
+    <string name="dialog_change_language_title">Сменить язык</string>
+    <!-- //Dialog Change language -->
+    <!-- //Settings -->
+
+    <!-- Dialog Base -->
+    <string name="delete">Удалить</string>
+    <string name="ok">Ок</string>
+    <string name="choose">Выбрать</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <!-- //Dialog Base -->
+
+    <!-- Feedback -->
+    <string name="feedback_title">Обратная связь</string>
+    <string name="feedback_info">Вы можете написать, как я могу сделать это приложение лучше</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="feedback_email">Email для обратной связи</string>
+    <string name="your_wishes">Ваши пожелания</string>
+    <string name="submit">Отправить</string>
+    <string name="error_validate_name">Имя не должно быть пустым</string>
+    <string name="error_validate_email">Email не должен быть пустым</string>
+    <string name="error_validate_wishes">Пожелания не должны быть пустыми</string>
+    <string name="wishes_sended">Ваши пожелания были отправлены</string>
+    <!-- //Feedback -->
+
+    <!-- Support project -->
+    <string name="support_project_title">Поддержать проект</string>
+    <string name="support_project_item_coffee_title">Кофе</string>
+    <string name="support_project_item_coffee_description">Всего одна чашка кофе для разработчика</string>
+    <string name="support_project_item_croissant_title">Круассан</string>
+    <string name="support_project_item_croissant_description">Круассан к кофе. Не пить же просто кофе без выпечки =)</string>
+    <string name="support_project_item_burger_title">Бургер</string>
+    <string name="support_project_item_burger_description">Я не могу есть только кофе и сладости. Я хищник и люблю мясо</string>
+    <string name="support_project_item_burgermenu_title">Бургер меню</string>
+    <string name="support_project_item_burgermenu_description">Вам, наверное, очень нравится это приложение =)</string>
+    <string name="support_project_buy">Купить</string>
+    <!-- Thanks dialog -->
+    <string name="buying_thanks_title">Спасибо</string>
+    <string name="support_project_thanks_message">Спасибо.\n
+        \tYou are one of a few people who support this project. I am glad that this application helps you and you continue using it.\n
+        \tPeople like you help this world get rid of annoying ads, make more quality products for free. I have hope that you stay with me.\n
+        \tI strongly believe that you will create something great and this app will help you with it.</string>
+    <!-- //Support project -->
+
+    <!-- About -->
+    <string name="about_title">О приложении</string>
+    <string name="about_text">
+        \tThis application was created by one man in short terms to make the process of DB designing easier.\n\n
+        \tThe app is free for all people forever.\n\n
+        \tI want to improve this app but I need your help to do it. Please, open \"Feedback\" and write down your suggestions. If you have an idea, found a bug or just wanted to ask something, feel free to contact me there. Your opinion is really important to me so I will try to take into account all your wishes.\n\n
+        \tThanks @natasha, @diana for your help with translation
+    </string>
+    <string name="about_thanks">Спасибо за использование этого приложения.</string>
+    <!-- //About -->
+
+    <!-- Backups -->
+    <string name="backups_title">Резервные копии</string>
+    <string name="create_backup">Создать резервную копию</string>
+    <string name="backup_name">Имя резервной копии</string>
+    <string name="restore_backup_question">Вы уверены, что хотите ВОССТАНОВИТЬ резервную копию?</string>
+    <string name="delete_backup_question">Вы уверены, что хотите УДАЛИТЬ резервную копию?</string>
+    <string name="backup_was_restored_success">Резервная копия восстановлена успешно</string>
+    <string name="backup_was_restored_error">Резервная копия не была восстановлена</string>
+    <string name="create_new_backup">Создать новую резервную копию</string>
+    <string name="add_other_backup">Добавить другую резервную копию в список</string>
+    <string name="backup">Резервное копирование</string>
+    <string name="backup_already_add">Эта резервная копия уже есть в списке</string>
+    <!-- //Backups -->
+
+    <!-- Info -->
+    <string name="info_title">Информация</string>
+    <!-- //Info -->
+
+    <!-- Rate dialog -->
+    <!-- Do like choice -->
+    <string name="rate_like_app">Вам нравится \"%s\"?</string>
+    <string name="rate_button_no">На самом деле, нет</string>
+    <string name="rate_button_yes">Да</string>
+    <!-- Rate in gp -->
+    <string name="rate_message">Если вам нравится использовать \"%s\", найдите минутку чтобы оценить его. \nСпасибо за вашу поддержку!</string>
+    <string name="why_not">Почему вам не нравится это приложение?</string>
+    <string name="rate_button_no_never">Нет никогда</string>
+    <string name="rate_button_remind_later">Напомнить позже</string>
+    <string name="rate_button_yes_go">Да, сделаем это</string>
+    <string name="rate_error">Не могу открыть Play market :(</string>
+    <!-- Why do not like -->
+    <string name="rate_message_feedback">Напишите, почему вам не нравится \"%s\", и я попытаюсь это исправить</string>
+    <string name="rate_button_dont_know">Не знаю, спроси позже</string>
+    <string name="rate_button_send">Отправить</string>
+    <string name="rate_message_sent">Ваш отзыв был отправлен</string>
+    <string name="rate_empty_email">Напишите электронный адрес, и я дам вам ответ</string>
+    <string name="rate_empty_message">Напишите, почему вам не нравится это приложение</string>
+    <!-- //Rate dialog -->
+
+    <!-- Hints-->
+    <string name="hint_button_i_got">Понятно</string>
+    <!-- All hints-->
+    <string name="hint_swap_structures_title">Вы знаете, что вы можете менять структуры местами?</string>
+    <string name="hint_swap_structures_description">Нажмите и удерживайте какую-либо структуру в течение одной секунды, затем перетащите ее туда, где вам нужно</string>
+    <string name="hint_add_structure_title">Вы знаете, что можно добавить структуру?</string>
+    <string name="hint_add_structure_description">Вы можете добавить свою структуру, просто нажав на кнопку с плюсом</string>
+    <string name="hint_drag_table_title">Вы знаете, что таблицу можно перетащить?</string>
+    <string name="hint_drag_table_description">Вы можете перетащить таблицу, просто нажмите и удерживайте таблицу в течение одной секунды, а затем переместите таблицу, куда хотите</string>
+    <!-- //Hints -->
+
+    <!-- Questions -->
+    <string name="connections_between_tables_title">Как создать связь между таблицами?</string>
+    <string name="connections_between_tables_description">Чтобы создать связь между таблицами, вам необходимо создать две таблицы с одной (как минимум) строкой в​каждой из них. &lt;br&gt; Затем откройте одну строку для редактирования, установите флажок FK (Внешний ключ), в раскрывающихся списках ниже выберите другую таблицу и строку как ссылки.</string>
+    <string name="change_structures_positions_title">Как изменить положение структур?</string>
+    <string name="change_structures_positions_description">Если вы хотите изменить положение одной структуры в списке структур, нажмите на какую-нибудь структуру, удерживайте около 1 секунды и перетащите в нужное место.</string>
+    <string name="move_tables_title">Как перемещать таблицы?</string>
+    <string name="move_tables_description">Когда вы откроете какую-то структуру, просто нажмите и перетащите, вы перетащите всю структуру. Если вы хотите изменить положение таблицы, нажмите и удерживайте стол в течение 1 секунды, а затем вы можете перетащить таблицу в нужное место.</string>
+    <string name="move_columns_positions_in_table_title">Как переместить столбцы в таблице?</string>
+    <string name="move_columns_positions_in_table_description">Открытая таблица, в которой вы хотите изменить положение столбцов. Нажмите на желаемый столбец, удерживайте 1 секунду и перейдите в новое положение.</string>
+    <string name="stick_tables_grid_title">Как приклеить таблицы к сетке?</string>
+    <string name="stick_tables_grid_description">Вы можете четко расположить свои таблицы. Откройте Настройки -> Карта -> Прилепленная сетка. Если вы включите эту функцию, ваши таблицы будут придерживаться сетки в выбранном радиусе вокруг сетки.</string>
+    <string name="flip_arrow_title">Как стрелки переворачивать?</string>
+    <string name="flip_arrow_description">Откройте Настройки -> Карта -> Отразить стрелки.</string>
+    <string name="change_color_theme_title">Как изменить цветовую тему?</string>
+    <string name="change_color_theme_description">Вы можете изменить тему приложения или некоторые цвета в Настройках -> Темы</string>
+    <string name="off_some_parts_interface_title">Как отключить некоторые части интерфейса?</string>
+    <string name="off_some_parts_interface_description">Если вам не нужны некоторые части интерфейса, например кнопки масштабирования, их можно отключить. Чтобы отключить их, откройте Настройки -> Интерфейс -> (включите/выключите то, что хотите)</string>
+    <string name="off_double_tap_for_exit_title">Как отключить двойной тап для выхода?</string>
+    <string name="off_double_tap_for_exit_description">Откройте Настройки -> Общие -> Двойное нажатие для выхода.</string>
+    <string name="import_SQL_title">Как импортировать SQL?</string>
+    <string name="import_SQL_description">Вы можете импортировать SQL из уже созданной базы данных. Для этого вам нужна открытая структура, в которую вы хотите импортировать SQL -> нажмите на три точки (справа вверху в окне) -> Импортировать из SQL -> вставьте свой SQL.</string>
+    <string name="export_SQL_code_title">Как экспортировать код SQL?</string>
+    <string name="export_SQL_code_description">Откройте структуру, из которой вы хотите экспортировать SQL, нажмите на три точки (справа вверху в окне), выберите «Экспорт в SQL».</string>
+    <string name="export_image_structure_title">Как экспортировать изображение конструкции?</string>
+    <string name="export_image_structure_description">Откройте структуру, из которой вы хотите создать изображение, нажмите на три точки (справа вверху в окне), выберите «Экспорт как изображение».</string>
+    <string name="create_primary_key_from_two_fields_title">Как создать первичный ключ с более чем одним столбцом?</string>
+    <string name="create_primary_key_from_two_fields_description">Откройте таблицу, в которой вы хотите создать первичный ключ из двух столбцов, и отметьте два или более столбца как первичный ключ.</string>
+    <!-- Questions general -->
+    <string name="question_title">Вопросы</string>
+    <string name="more_questions_title">Если вы не нашли здесь свой вопрос?</string>
+    <string name="more_questions_description">Я попробовал написать сюда несколько вопросов от пользователей. Если у вас есть другие вопросы, напишите мне их в окне обратной связи.</string>
+    <string name="mischief_managed">Шалость удалась.</string>
+    <string name="open_in_youtube">Откройте в приложении Youtube.</string>
+    <!-- //Questions -->
+
+    <!--  -->
+    <!-- // -->
+
+    <!-- Release notes -->
+    <string name="release_notes_title">Примечания к выпуску</string>
+    <string name="release_notes_1.14"><![CDATA[<b>1.14</b><br/>\n\u2022 Экспорт SQL - сохраненная последняя выбранная оболочка для имен<br/>\n\u2022 "Строка" переименована в "столбец".<br/>\n\u2022 Добавлена опция «беззнаковый» для числовых типов для MySql.<br/>\n\u2022 Изменено вступление<br/>\n\u2022 Добавлены ответы на некоторые вопросы внутри приложения<br/>\n\u2022 Добавлены подсказки<br/>\n\u2022 Добавлена опция «Удалить» в контекстное меню структуры.<br/>\n\<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13.2"><![CDATA[<b>1.13.2</b><br/>\n\u2022 Исправлена ошибка с повторяющимися типами данных<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13.1"><![CDATA[<b>1.13.1</b><br/>\n\u2022 Исправлена ошибка доступа к файловой структуре на некоторых устройствах (экспорт изображения, экспорт SQL в файл, загрузка резервной копии)<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13"><![CDATA[<b>1.13</b><br/>\n\u2022 Добавлено описание таблиц/строк в экспортный SQL<br/>\n\u2022 Добавлена возможность скрыть тип данных<br/>\n\u2022 Исправлен стиль кода SQL при экспорте<br/>\n\u2022 Добавлена спецификация ENUM<br/>\n\u2022 Добавлена возможность экспорта в SQL одной таблицы<br/>\n\u2022 Допускаются строки без первичного ключа в качестве внешнего ключа<br/>\n\u2022 Исправлен просмотр в диалогах экспорта изображений / SQL<br/>\n\u2022 Фиксированные струны<br/>\n\u2022 Исправлены ошибки<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.12"><![CDATA[<b>1.12</b><br/>\n\u2022 Добавлен поиск<br/>\n\u2022 Исправлены строки<br/>\n\u2022 Добавлена опция отключения двойного тапа для выхода<br/>\n\u2022 Установлено целевая SDK 29<br/>\n\u2022 Исправлены ошибки<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.11"><![CDATA[<b>1.11</b><br/>\n\u2022 Добавлен переход к следующему полю во время редактирования<br/>\n\u2022 Добавлена кнопка «Вставить» в диалог импорта SQL<br/>\n\u2022 Добавлена возможность придерживаться сетки<br/>\n\u2022 Добавлена возможность задать размер ячейки сетки<br/>\n\u2022 Исправлен ввод в полях описания<br/>\n\u2022 Добавлен выбор СУБД<br/>\n\u2022 Добавлен экспорт в PostgreSQL<br/>\n\u2022 Некоторый рефакторинг<br/>\n\u2022 Добавлены некоторые типы данных<br/>\n\u2022 Фиксированные струны<br/>\n\u2022 Добавлены китайские/французские переводы.<br/>\n\u2022 Добавлена возможность клонирования структуры<br/>\n\u2022 Исправлены ошибки<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.10"><![CDATA[<b>1.10</b><br/>\n\u2022 Автоматическое копирование типа/размера данных из первичного ключа, когда вы выбираете строку в качестве внешнего ключа(можно отключить в настройках)<br/>\n\u2022 Отредактированный диалог экспорта изображения (добавлено разрешение, качество, экспорт изображения с использованием устройств с нехваткой памяти)<br/>\n\u2022 Может включать сценарии удаления таблицы к экспорту<br/>\n\u2022 Экспорт SQL в файл<br/>\n\u2022 Может перетаскивать (изменять позиции) структур<br/>\n\u2022 Добавлены имена по умолчанию для таблиц/строк (Вы можете сохранить таблицу/строку с пустым именем поля, и имя будет сгенерировано автоматически, как например таблица_2)<br/>\n\u2022 Добавлен вопрос перед сохранением/отменой/удалением таблиц/строк… (можно включить/выключить каждый тип вопроса в настройках)<br/>\n\u2022 Оптимизирован для режима с несколькими окнами<br/>\n\u2022 Добавлена некоторая оптимизация для Samsung DEX<br/>\n\u2022 Добавлено внешнее масштабирование мышью<br/>\n\u2022 Исправлена перезагрузка после подключения внешней мыши/клавиатуры<br/>\n\u2022 Исправлены другие ошибки<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.9"><![CDATA[<b>1.9</b><br/>\n\u2022 Добавлено описание для строк (можно показать/скрыть в настройках)<br/>\n\u2022 Добавленные заметки<br/>\n\u2022 Отключен выбор \"Allow NULL\", если выбран primary key<br/>\n\u2022 Добавлена точность для некоторых типов данных<br/>\n\u2022 Экспорт SQL (выбор языка SQLite/MySql, добавлены параметры обертки)<br/>\n\u2022 Возможность изменить направление стрелки<br/>\n\u2022 Добавлена возможность поддержать проект<br/>\n\u2022 Исправлена ошибка с изменением позиции строк<br/>\n\u2022 Исправлены другие ошибки<br/>\n\u2022 Оптимизация (сделано немного быстрее)<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.8"><![CDATA[<b>1.8</b><br/>\n\u2022 Добавлены темы<br/>\n\u2022 Показано значение ограничения рядом с типом данных<br/>\n\u2022 Разрешено устанавливать foreign ключи как primary<br/>\n\u2022 Добавлено автоматическое сохранение по таймеру (можно отключить в настройках)<br/>\n\u2022 Добавлено автосохранение перед выходом (можно отключить в настройках)<br/>\n\u2022 Изменено окно настроек<br/>\n\u2022 Изменено форматирование кода экспорта SQL<br/>\n\u2022 Добавлены новые типы данных<br/>\n\u2022 Добавлены значки в «Информационном диалоге»<br/>\n\u2022 Измено положение сохранить и отменить кнопки<br/>\n\u2022 Показано сообщение об ошибках при импорте SQL<br/>\n\u2022 Новые таблицы будут созданы +- в центре экрана<br/>\n\u2022 Открывается структура в том же положении, что и до выхода (можно отключить в настройках)<br/>\n\u2022 Добавлены цвета по умолчанию для палитры цветов<br/>\n\u2022 Нажмите на номер шкалы (1,1x) на карте, чтобы установить масштаб 1x<br/>\n\u2022 Изменены вводные анимации<br/>\n\u2022 Добавлены новые флажки<br/>\n\u2022 Добавлена некоторая оптимизация для старых телефонов<br/>\n\u2022 Исправлены некоторые ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.7"><![CDATA[<b>1.7</b><br/>\n\u2022 Отредактировано окно \"Редактировать строку\"<br/>\n\u2022 Добавлен выбор цвета строки<br/>\n\u2022 Добавлены действия при On Delete/On Update<br/>\n\u2022 Добавлены параметры экспорта SQL (ключи, комментарии, положение таблицы, цвета)<br/>\n\u2022 Исправлены ошибки перевода<br/>\n\u2022 Добавлено окно \"Что нового\"<br/>\n\u2022 Исправлены ошибки импорта/экспорта SQL<br/>\n\u2022 Исправлены другие ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.6"><![CDATA[<b>1.6</b><br/>\n\u2022 Добавлен зум<br/>\n\u2022 Исправлена Not Null иконка<br/>\n\u2022 Добавлена информация для ключей в диалоге редактирования таблицы<br/>\n\u2022 Исправлены ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.5"><![CDATA[<b>1.5</b><br/>\n\u2022 Изменен дизайн диалога \"Редактировать таблицу\" (вы можете вернуть старый дизайн в настройках)<br/>\n\u2022 Исправлены ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.4"><![CDATA[<b>1.4</b><br/>\n\u2022 Добавлена возможность печати описания таблиц на карте<br/>\n\u2022 Исправлены ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.3"><![CDATA[<b>1.3</b><br/>\n\u2022 Добавлена возможность изменить цвет заголовка таблицы<br/>\n\u2022 Исправлены ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.2"><![CDATA[<b>1.2</b><br/>\n\u2022 Добавдено вступление<br/>\n\u2022 Исправлены ошибки<br/><br/>\n]]></string>
+    <string name="release_notes_1.1"><![CDATA[<b>1.1</b><br/>\n\u2022 Добавлена возможность делать резервные копии<br/>\n\u2022 Исправлены ошибки<br/>]]></string>
+    <!-- //Release notes -->
+
+</resources>

@@ -1,0 +1,277 @@
+apply plugin: 'java-gradle-plugin' // Allows us to create and configure custom plugins
+apply plugin: 'kotlin' //Needed as we'll write our plugin in Kotlin
+apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'groovy'
+apply plugin: 'com.github.johnrengelman.shadow'
+//apply plugin: 'StringRobber'
+
+buildscript {
+
+    ext {
+        springBootVersion = '2.0.4.RELEASE'
+        hazelCastVersion = '3.10.4'
+    }
+
+    version '0.0.2'
+    def versName = "1.14.1"
+
+    println("------------------------------")
+    println(getVersion())
+
+    ext.kotlin_version = '1.4.30'
+    ext.gradle_version = '4.1.3'
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.android.tools.build:gradle:$gradle_version"
+    }
+}
+
+group 'com.klim'
+//
+setVersion('0.0.2')
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/main/kotlin']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+    test { // declares a new sourceset
+        // specifies code source dir
+        kotlin.srcDir file('src/test/kotlin')
+        // specifies resource dir
+        resources.srcDir file('src/test/resources')
+
+        // specifies dependencies to compile test classes
+        compileClasspath += sourceSets.main.output + configurations.testRuntimeClasspath
+
+        // specifies dependencies to run tests
+        runtimeClasspath += output + compileClasspath
+    }
+}
+
+gradlePlugin {
+    plugins {
+//        simplePlugin {
+//            id = "string_robber"
+//            implementationClass = "com.klim.stealler.StringRobber"
+//        }
+        create("string_robber") {
+            id = "string_robber"
+            implementationClass = "com.klim.stealler.StringRobber"
+        }
+    }
+}
+
+//task bbb(type: Build) {
+//
+//}
+
+task thinJar(type: Jar) {
+    manifest.from jar.manifest
+    zip64=true
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+task fatJar(type: Jar) {
+    manifest.from jar.manifest
+    classifier = 'all'
+    zip64=true
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+shadowJar {
+    minimize()
+    getDestinationDirectory().set(new File(projectDir, "../app/libs"))
+    exclude 'android/*'
+    exclude 'android\\*'
+    exclude 'android\\*.*'
+    exclude 'android/*.*'
+    exclude 'android/**/*.*'
+
+    exclude 'com/android/**/*.*'
+
+    exclude 'androidx/*'
+    exclude 'androidx\\*.*'
+    exclude 'androidx/**/*.*'
+//    getDestinationDirectory().set(new File("C:/GradleProjects/StringsRobber/sync_help/build/libs/shadow.jar"))
+//    destinationDir = File("C:/GradleProjects/StringsRobber/sync_help/build/libs/") //shadow.jar
+}
+
+jar {
+    getArchiveBaseName().set('string_robber')
+//    baseName = 'analytics'
+    from('src/main/') {
+        include '**/*.*'
+    }
+
+//    manifest {
+//        attributes 'Implementation-Title': 'Analytics Library', 'Implementation-Version': version
+//    }
+}
+///////////////////
+configurations {
+    // configuration that holds jars to include in the jar
+    extraLibs
+}
+
+//jar {
+//    getArchiveBaseName().set('analytics')
+//    from('libs/') {
+//        include '**/*.*'
+//    }
+//    from {
+//        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+////        configurations.dependencies.collect { it.isDirectory() ? it : zipTree(it) } unknown property 'dependencies'
+////        getDependencies().collect { zipTree(it) }
+////        ["com.google.cloud:libraries-bom:19.2.1"].collect { it.isDirectory() ? it : zipTree(it) }
+////        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } //do not work as I want
+//
+////        def libBuildDir = mkdir "${buildDir}/resources/main/lib"
+////        copy {
+////            from { configurations.extraLibs }
+////            into { libBuildDir }
+//////            into { 'libs/' }
+////        }
+//
+//    }
+//}
+
+///////////////////
+
+task copy_Jar(type: Copy) {
+    from('build/libs/')
+    into('../app/libs/')
+    include('string_robber-'+version+'.jar')
+//    rename('classes.jar', 'logmanagementlib.jar')
+}
+
+//mainClassName = "com.klim.stealler.StringRobber2"
+//jar {
+//    manifest {
+//        attributes "Main-Class": "com.klim.stealler.StringRobber2"
+//    }
+//
+//    from {
+//        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+//    }
+//}
+
+
+task functionalTest(type: Test) {
+    description = 'Runs the functional tests.'
+    group = 'verification'
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+}
+check.dependsOn functionalTest
+
+//task translateResourcesDebug2(type: TranslateResourcesTask) { //StringRobber
+//    mode = TranslateResourcesTask.ModeSoft
+//    stringInputFilePath = "src\\main\\res\\values\\strings.xml"
+//    stringOutputFilePath = "src\\main\\res\\values-ru\\strings.xml"
+//    srcLanguage = "en"
+//    targetLanguage = "ru"
+//}
+
+dependencies {
+//    implementation fileTree('libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+//    implementation files('libs\\google-cloud-translate-1.96.0.jar')
+    // Android gradle plugin will allow us to access Android specific features
+//    implementation "com.android.tools.build:gradle:$gradle_version"
+
+//    extraLibs files('libs\\google-cloud-translate-1.96.0.jar')
+//    configurations.compile.extendsFrom(configurations.extraLibs)
+
+    implementation 'com.google.cloud:libraries-bom:19.2.1'
+    implementation 'com.google.cloud:google-cloud-translate:1.96.0'
+
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation files('libs\\google-cloud-translate-1.96.0.jar')
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+//apply plugin: 'java-gradle-plugin'
+////apply plugin: 'java-library'
+////apply plugin: 'kotlin'
+////apply plugin: 'maven'
+////apply plugin: 'groovy'
+//apply plugin: 'com.android.application'
+////apply plugin: 'kotlin-android'
+//
+//android {
+//    compileSdkVersion 30
+//    buildToolsVersion "30.0.3"
+//}
+//
+//buildscript {
+//    ext.kotlin_version = '1.4.30'
+//    ext.gradle_version = '3.5.3'
+//    repositories {
+//        google()
+//        jcenter()
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath "com.android.tools.build:gradle:$gradle_version"
+//    }
+//}
+//
+//repositories {
+//    google()
+//    jcenter()
+//    mavenCentral()
+//}
+//
+//sourceSets {
+//    main {
+//        java {
+//            srcDirs = ['src/main/java', 'src/main/kotlin']
+//        }
+//        resources {
+//            srcDirs = ['src/main/resources']
+//        }
+//    }
+//}
+//
+//dependencies {
+//    implementation fileTree('libs')
+//    implementation gradleApi()
+//    implementation localGroovy()
+////    implementation 'com.google.cloud:libraries-bom:19.2.1'
+////    implementation 'com.google.cloud:google-cloud-translate:1.96.0'
+//}

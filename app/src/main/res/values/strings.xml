@@ -1,3 +1,405 @@
 <resources>
-    <string name="app_name">StringsRobber</string>
+    <!-- Main -->
+    <string name="tap_twice">Tap TWICE if you want close app</string>
+    <string name="current_version">Current version %s</string>
+    <string name="new_current_version">New %s version available</string>
+    <!-- //Main -->
+
+    <!-- Menu -->
+    <string name="menu_structures">Structures</string>
+    <string name="menu_backups">Backups</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_support">Support the project</string>
+    <string name="menu_questions">Questions</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_about">About</string>
+    <!-- //Menu -->
+
+    <!-- Intro -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+    <string name="start_design">Start designing</string>
+    <string name="intro_item_first_title">DbDesigner</string>
+    <string name="intro_item_first_description">The fast App for designing a database.\nIt is free, light and safety.</string> <!--//Easy to use, customable, cloud(acces to your structure from anywhere)-->
+    <string name="intro_item_fast_title">Fast</string>
+    <string name="intro_item_fast_description">DbDesigner is working fast for you can work and not wait.</string>
+    <string name="intro_item_free_title">Free</string>
+    <string name="intro_item_free_description">DbDesigner is free forever.\nNo ads. No subscription fees.</string>
+    <string name="intro_item_powerful_title">Powerful</string>
+    <string name="intro_item_powerful_description">DbDesigner has no limits on the size of your databases or their count.</string>
+    <string name="intro_item_secure_title">Secure</string>
+    <string name="intro_item_secure_description">All your databases save only on your phone.</string>
+    <string name="intro_item_light_title">Light</string>
+    <string name="intro_item_light_description">Just a few megabytes give you the ability to design your structures anywhere.</string>
+    <!-- // Intro -->
+
+    <!-- Structures -->
+    <string name="structures_title">Structures</string>
+    <!-- Context Structure -->
+    <string name="clone_structure">Clone Structure</string>
+    <string name="ctx_edit">Edit</string>
+    <string name="ctx_clone">Clone</string>
+    <string name="ctx_delete">Delete</string>
+    <!-- Create/Edit dialog -->
+    <string name="create_structure">Create Structure</string>
+    <string name="edit_structure">Edit Structure</string>
+    <string name="structure_name">Name of the structure</string>
+    <string name="structure_description">Description of the structure</string>
+    <string name="structure_rdbms">Relational Database Management System</string>
+    <!-- Clone dialog -->
+    <string name="structure_new_name">Name of the new structure</string>
+    <string name="structure_new_description">Description of the new structure</string>
+    <!-- //Structures -->
+
+    <!-- Structure -->
+    <string name="structure_was_sawed">DB Structure was saved</string>
+    <string name="import_sql">Import from SQL</string>
+    <string name="export_sql">Export to SQL</string>
+    <string name="export_jpg">Export like image</string>
+    <string name="exit_do_not_save_changes">Are you sure? The changes you made will be lost.</string>
+    <!-- Dialog Export Sql table -->
+    <string name="export_sql_title">Export to SQL</string>
+    <string name="export_sql_select_language">SQL language</string>
+    <string name="export_sql_include_keys_prim">Include Primary keys</string>
+    <string name="export_sql_include_keys_foreign">Include Foreign keys</string>
+    <string name="export_sql_include_foreign_actions">Include "On Delete/On Update" actions</string>
+    <string name="export_sql_include_drop_table">Include drop table</string>
+    <string name="export_sql_include_table_descript_sql">Include table description into SQL</string>
+    <string name="export_sql_include_columns_descript_sql">Include columns description into SQL</string>
+    <string name="export_sql_include_table_descript">Include table description</string>
+    <string name="export_sql_include_columns_descript">Include columns description</string>
+    <string name="export_sql_include_table_location">Include table location</string>
+    <string name="export_sql_include_table_color">Include information about color</string>
+    <string name="export_sql_name_wrapper">Use wrapper for names</string>
+    <string name="export_sql_more_options">Show more options</string>
+    <string name="sql_export">Export</string>
+    <string name="sql_was_copied_to_clipboard">Sql was copied to clipboard</string>
+    <string name="export_sql_select_target">Export into</string>
+    <string name="export_sql_target_clipboard">Copy to clipboard</string>
+    <string name="export_sql_target_file">Save to file</string>
+    <string name="sql_was_exported_to_file">Sql was exported to file</string>
+    <!-- //Dialog Export Sql table -->
+    <!-- Dialog Export Image table -->
+    <string name="export_img_title">Export as image</string>
+    <string name="draw_mini_map">Draw minimap?</string>
+    <string name="folder_for_save">Save Folder</string>
+    <string name="select_folder">Change</string>
+    <string name="file_resolution">Resolution</string>
+    <string name="file_quality">Quality</string>
+    <string name="file_name">File name</string>
+    <string name="you_cant_use_chars">You can\'t use these characters</string>
+    <string name="export">Export</string>
+    <string name="img_was_created">Image was created</string>
+    <string name="img_was_not_created">Failed to create image</string>
+    <!-- Dialog Export Image table -->
+    <!-- Dialog Import Sql table -->
+    <string name="import_sql_title">Import from SQL</string>
+    <string name="import_sql_supported">Only \"create\" type requests are supported</string>
+    <string name="your_sql">Your SQL code</string>
+    <string name="write_your_sql_hint">Write your SQL code here</string>
+    <string name="_paste">Paste from Clipboard</string>
+    <string name="sql_pasted">SQL pasted</string>
+    <string name="empty_clipboard">Clipboard is empty</string>
+    <string name="clipboard_paste_error">Something happened, I cannot paste data from the clipboard</string>
+    <string name="_import">Import</string>
+    <string name="sql_was_imported">SQL was imported</string>
+    <string name="sql_was_import_error">Failed to import SQL. Please check if there is any error in the SQL.</string>
+    <!-- //Dialog Import Sql table -->
+    <!-- Dialog choose create Table/Note  -->
+    <string name="dialog_add_choose_title">Choose</string>
+    <string name="dialog_add_choose_add_table">Add Table</string>
+    <string name="dialog_add_choose_add_note">Add Note</string>
+    <!-- //Dialog choose create Table/Note  -->
+    <!-- Dialog Create/Edit table -->
+    <string name="create_table">Create Table</string>
+    <string name="edit_table">Edit Table</string>
+    <string name="export_table_sql">Export current table into SQL</string>
+    <string name="sure_question">Are you sure?</string>
+    <string name="name_not_empty">Name must not be empty</string>
+    <string name="table_name">Table Name</string>
+    <string name="table_description">Table Description</string>
+    <string name="table_header_color">Table header color</string>
+    <string name="add_column">Add Column</string>
+    <string name="edit_column">Edit Column</string>
+    <string name="column_add">Add column</string>
+    <string name="column_done">Done</string>
+    <string name="column_delete">Delete</string>
+    <string name="column_cancel">Cancel</string>
+    <string name="column_name">Name</string>
+    <string name="type">Type</string>
+    <string name="size">Size</string>
+    <string name="size_hint">Size</string>
+    <string name="precision_hint">Precision</string>
+    <string name="enum_value">Values</string>
+    <string name="enum_value_hint">\"Value 1\", \"Value_2\"</string>
+    <string name="_default">Default</string>
+    <string name="default_hint">Value</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Description</string>
+    <string name="column_color">Column color</string>
+    <string name="info">Info</string>
+    <string name="primary_key">Primary Key</string>
+    <string name="allow_nulls">Allow nulls</string>
+    <string name="unique">Unique</string>
+    <string name="auto_increment">Auto Increment</string>
+    <string name="unsigned">Unsigned</string>
+    <string name="foreign_key">Foreign Key</string>
+    <string name="ref_table">Ref. Table</string>
+    <string name="ref_field">Ref. Field</string>
+    <string name="on_delete">On Delete</string>
+    <string name="on_update">On Update</string>
+    <!-- //Dialog Create/Edit table -->
+    <!-- Dialog Create/Edit Note  -->
+    <string name="dialog_add_note_title_create">Create Note</string>
+    <string name="dialog_add_note_title_edit">Edit Note</string>
+    <string name="dialog_add_note_title_label">Title</string>
+    <string name="dialog_add_note_title_hint">Title</string>
+    <string name="dialog_add_note_description_label">Description</string>
+    <string name="dialog_add_note_description_hint">Description</string>
+    <string name="dialog_add_note_color">Note color</string>
+    <string name="dialog_add_note_sure_question">Are you sure?</string>
+    <string name="name_or_description_empty">You should write something into title or description</string>
+    <!-- //Dialog Create/Edit Note  -->
+    <!-- //Structure -->
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_tab_general">General</string>
+    <string name="settings_tab_interface">Interface</string>
+    <string name="settings_tab_map">Map</string>
+    <string name="settings_tab_theme">Themes</string>
+    <!-- ** Settings General -->
+    <string name="language">Language</string>
+    <string name="autosave">Autosave</string>
+    <string name="autosave_enabled">Enable timer autosave</string>
+    <string name="autosave_before_exit">Autosave before exit</string>
+    <string name="autosave_period">Autosave period (sec)</string>
+    <string name="autosave_period_restriction">Value between 15 and 1500</string>
+    <string name="autosave_message">Show save message</string>
+    <string name="open_parameters">Open parameters</string>
+    <string name="open_parameters_position">Open the structure at the position that was at the exit</string>
+    <string name="questions">Questions</string>
+    <string name="question_before_save">Show questions before SAVE tables/columns..</string>
+    <string name="question_before_save_description">Questions showing only if changes was detected</string>
+    <string name="question_before_delete">Show questions before DELETE tables/columns..</string>
+    <string name="question_before_cancel">Show questions before CANCEL tables/columns..</string>
+    <string name="question_before_cancel_description">Questions showing only if changes was detected</string>
+    <string name="actions">Actions</string>
+    <string name="copy_data_type_size_from_primary">Copy data type and size from Primary key</string>
+    <string name="copy_data_type_size_from_primary_description">When you select some column like a Foreign key data type/size will copy automatically from Primary key</string>
+    <string name="double_tap_for_exit">Double tap for exit</string>
+    <string name="linking_without_primary">Linking with columns without Primary key</string>
+    <string name="linking_without_primary_description">Enable linking Foreign key with columns without Primary key</string>
+    <!-- ** Settings  Interface-->
+    <string name="interfaces">Interface</string>
+    <string name="show_button_navigate_to_start">Show navigate to start button</string>
+    <string name="show_buttons_zoom">Show zoom buttons</string>
+    <string name="mouse_zoom">Mouse scaling</string>
+    <string name="mouse_zoom_description">1 click wheel change zoom to</string>
+    <string name="default_names_for_tables_columns">Default names for tables/columns</string>
+    <string name="default_names_for_tables_columns_description">Will save tables/columns with auto generated name if it is empty</string>
+    <string name="compact_column_properties">Compact column properties</string>
+    <string name="save_column_buttons">Save column buttons in title </string>
+    <!-- ** Settings  Map-->
+    <string name="colors">Custom colors</string>
+    <string name="color_lines">Line color</string>
+    <string name="grid_color">Grid color</string>
+    <string name="map_bg_color">Map background color</string>
+    <string name="elements">Elements</string>
+    <string name="show_grid">Show grid</string>
+    <string name="show_mini_map">Show mini map</string>
+    <string name="show_arrow">Show arrow</string>
+    <string name="show_foreign_key_icon">Show Foreign Key Icon</string>
+    <string name="show_auto_increment_icon">Show Auto Increment Icon</string>
+    <string name="show_not_null_icon">Show Not Null icon</string>
+    <string name="show_default_values">Show Default Values</string>
+    <string name="show_table_description">Show table description</string>
+    <string name="show_column_description">Show column description</string>
+    <string name="show_data_type_size">Show data type size</string>
+    <string name="show_data_type">Show data type</string>
+    <string name="print_table_shadow">Print table shadow</string>
+    <string name="print_table_shadow_description">If you On, drawing can be a little slower</string>
+    <string name="flip_arrows">Flip arrows</string>
+    <string name="flip_arrows_description">Show arrows near foreign key</string>
+    <string name="line_type">Line type</string>
+    <string name="grid_cell_size">Grid cell size</string>
+    <string name="grid_size_limits">A value between 10 and 1000</string>
+    <string name="sticky_grid">Sticky grid</string>
+    <string name="sticky_grid_description">Stick tables/notes to the grid when they dragging</string>
+    <string name="sticky_grid_radius">Sticky grid radius</string>
+    <string name="sticky_grid_radius_description">Area when tables/notes stick to the grid line</string>
+    <!-- ** Settings  Theme-->
+    <string name="color_theme">Color theme</string>
+    <!-- Dialog Change language -->
+    <string name="dialog_change_language_title">Change language</string>
+    <!-- //Dialog Change language -->
+    <!-- //Settings -->
+
+    <!-- Dialog Base -->
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="choose">Choose</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <!-- //Dialog Base -->
+
+    <!-- Feedback -->
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_info">I would love to hear your thoughts and ideas on how I can improve your experience!</string>
+    <string name="your_name">Your name</string>
+    <string name="feedback_email">Your Email(for feedback)</string>
+    <string name="your_wishes">Your wishes</string>
+    <string name="submit">Submit</string>
+    <string name="error_validate_name">Name should not be empty</string>
+    <string name="error_validate_email">Email should not be empty</string>
+    <string name="error_validate_wishes">Wishes should not be empty</string>
+    <string name="wishes_sended">Your wishes have been sent</string>
+    <!-- //Feedback -->
+
+    <!-- Support project -->
+    <string name="support_project_title">Support the project</string>
+    <string name="support_project_item_coffee_title">Coffee</string>
+    <string name="support_project_item_coffee_description">Just one cup of coffee for developer</string>
+    <string name="support_project_item_croissant_title">Croissant</string>
+    <string name="support_project_item_croissant_description">Croissant with a cup of coffee. To not drink just coffee without a bake =)</string>
+    <string name="support_project_item_burger_title">Burger</string>
+    <string name="support_project_item_burger_description">I can not eat only coffee and sweets. I am a predator and I like meat</string>
+    <string name="support_project_item_burgermenu_title">Burger menu</string>
+    <string name="support_project_item_burgermenu_description">You probably really like this app =)</string>
+    <string name="support_project_buy">Buy</string>
+    <!-- Thanks dialog -->
+    <string name="buying_thanks_title">Thank you</string>
+    <string name="support_project_thanks_message">Thank you.\n
+        \tYou are one of a few people who support this project. I am glad that this application helps you and you continue using it.\n
+        \tPeople like you help this world get rid of annoying ads, make more quality products for free. I have hope that you stay with me.\n
+        \tI strongly believe that you will create something great and this app will help you with it.</string>
+    <!-- //Support project -->
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_text">
+        \tThis application was created by one man in short terms to make the process of DB designing easier.\n\n
+        \tThe app is free for all people forever.\n\n
+        \tI want to improve this app but I need your help to do it. Please, open \"Feedback\" and write down your suggestions. If you have an idea, found a bug or just wanted to ask something, feel free to contact me there. Your opinion is really important to me so I will try to take into account all your wishes.\n\n
+        \tThanks @natasha, @diana for your help with translation
+    </string>
+    <string name="about_thanks">Thank you for using this app.</string>
+    <!-- //About -->
+
+    <!-- Backups -->
+    <string name="backups_title">Backups</string>
+    <string name="create_backup">Create backup</string>
+    <string name="backup_name">Name of the backup</string>
+    <string name="restore_backup_question">Are you sure that you want to RESTORE the backup?</string>
+    <string name="delete_backup_question">Are you sure that you want to DELETE the backup?</string>
+    <string name="backup_was_restored_success">The backup was restored successfully</string>
+    <string name="backup_was_restored_error">The backup was not restored</string>
+    <string name="create_new_backup">Create a new backup</string>
+    <string name="add_other_backup">Add other backup to the list</string>
+    <string name="backup">Backup</string>
+    <string name="backup_already_add">This backup is already in the list</string>
+    <!-- //Backups -->
+
+    <!-- Info -->
+    <string name="info_title">Info</string>
+    <!-- //Info -->
+
+    <!-- Rate dialog -->
+    <!-- Do like choice -->
+    <string name="rate_like_app">Do you like \"%s\"?</string>
+    <string name="rate_button_no">Not really</string>
+    <string name="rate_button_yes">Yes</string>
+    <!-- Rate in gp -->
+    <string name="rate_message">If you enjoy using \"%s\", please take a moment to rate it. \nThank you for your support!</string>
+    <string name="why_not">Why you don`t like this app?</string>
+    <string name="rate_button_no_never">No never</string>
+    <string name="rate_button_remind_later">Remind me later</string>
+    <string name="rate_button_yes_go">Yes, let\'s do it</string>
+    <string name="rate_error">I can not open Play market :(</string>
+    <!-- Why do not like -->
+    <string name="rate_message_feedback">Write why you don\`t like \"%s\" and I will try to fix it</string>
+    <string name="rate_button_dont_know">I don\`t know, ask later</string>
+    <string name="rate_button_send">Send</string>
+    <string name="rate_message_sent">Your feedback was sent</string>
+    <string name="rate_empty_email">Write an email and I will give answer to you</string>
+    <string name="rate_empty_message">Write why you don\`t like this app</string>
+    <!-- //Rate dialog -->
+
+    <!-- Hints-->
+    <string name="hint_button_i_got">I got it</string>
+    <!-- All hints-->
+    <string name="hint_swap_structures_title">Do you know that you can swap structures?</string>
+    <string name="hint_swap_structures_description">Tap and hold on to some structure for one second then drag it where you need</string>
+    <string name="hint_add_structure_title">Do you know that you can add structure?</string>
+    <string name="hint_add_structure_description">You can add your own structure, just tap on the plus button</string>
+    <string name="hint_drag_table_title">Do you know that you can drag a table?</string>
+    <string name="hint_drag_table_description">You can drag some table, just tap and hold on a table during one second then move table where you want</string>
+    <string name="hint_hide_parts_interface_title">Do you know that you can hide parts of interface?</string>
+    <string name="hint_hide_parts_interface_description">You can hide parts of interface, for it open settings - interface and choose with parts of interface do you want to see</string>
+    <string name="hint_stick_to_grid_title">Do you know that you can stick tables to grid?</string>
+    <string name="hint_stick_to_grid_description">You can stick tables to the grid, for it open settings - map, then turn on and set up the stick to the grid</string>
+    <string name="hint_zoom_to_start_title">How to set zoom to 1x?</string>
+    <string name="hint_zoom_to_start_description">Tap on label with your current zoom and zoom will set to 1x</string>
+    <!-- //Hints -->
+
+    <!-- Questions -->
+    <string name="connections_between_tables_title">How to create a connection between tables?</string>
+    <string name="connections_between_tables_description">To create a connection between tables you need to create two tables with one (at less) row in each of them.&lt;br&gt; Then open one row for edit, select check box FK (Foreign key), in dropdowns bellow select other table and row like references.</string>
+    <string name="change_structures_positions_title">How to change positions of structures?</string>
+    <string name="change_structures_positions_description">If you want to change position one structure in the list of structures tap on some structure, hold about 1 second and drag on a position where you want.</string>
+    <string name="move_tables_title">How to move tables?</string>
+    <string name="move_tables_description">When you will open some structure, just tap and drag, you will drag all structure. If you want to change table position press on table hold for 1 second and then you can drag the table where you want.</string>
+    <string name="move_columns_positions_in_table_title">How to move columns positions in a table?</string>
+    <string name="move_columns_positions_in_table_description">An open table where you want to change positions of columns. Press on the desirable column, hold for 1 second and move on to a new position.</string>
+    <string name="stick_tables_grid_title">How to stick tables to grid?</string>
+    <string name="stick_tables_grid_description">You can position your tables clearly. Open Settings -> Map -> Sticky grid. If you turn on this function your tables will stick to the grid in a selected radius around the grid.</string>
+    <string name="flip_arrow_title">How to flip arrows?</string>
+    <string name="flip_arrow_description">Open Settings -> Map -> Flip arrows.</string>
+    <string name="change_color_theme_title">How to change the color theme?</string>
+    <string name="change_color_theme_description">You can change the application theme or some colors in Settings -> Themes</string>
+    <string name="off_some_parts_interface_title">How to off some parts of the interface?</string>
+    <string name="off_some_parts_interface_description">If you do not need some parts of the interface like zoom buttons you can turn off them. To turn off them open Settings -> Interface -> (turn on/off what you want)</string>
+    <string name="off_double_tap_for_exit_title">How to off double tap for exit?</string>
+    <string name="off_double_tap_for_exit_description">Open Settings -> General -> Double tap for exit</string>
+    <string name="import_SQL_title">How to import SQL?</string>
+    <string name="import_SQL_description">You can import SQL from your already created database. For it you need an open structure where you want to import SQL -> tap on three dots (right top in the window) -> Import from SQL -> paste your SQL.</string>
+    <string name="export_SQL_code_title">How to export SQL code?</string>
+    <string name="export_SQL_code_description">Open a structure from which you want to export SQL, tap on three dots (right top in the window), select Export to SQL.</string>
+    <string name="export_image_structure_title">How to export an image of the structure?</string>
+    <string name="export_image_structure_description">Open structure from which you want to create the image, tap on three dots (right top in the window), select Export like an image.</string>
+    <string name="create_primary_key_from_two_fields_title">How to create a Primary key with more than one column?</string>
+    <string name="create_primary_key_from_two_fields_description">Open the table where you want to create Primary key from two columns and mark two or more columns as Primary key.</string>
+    <!-- Questions general -->
+    <string name="question_title">Questions</string>
+    <string name="more_questions_title">If you did not find your question here?</string>
+    <string name="more_questions_description">I tried to write some questions from users here. If you have any other questions please write to me in the Feedback window.</string>
+    <string name="mischief_managed">Mischief managed.</string>
+    <string name="open_in_youtube">Open in Youtube App.</string>
+    <!-- //Questions -->
+
+    <!--  -->
+    <!-- // -->
+
+    <!-- Release notes -->
+    <string name="release_notes_title">Release notes</string>
+    <string name="release_notes_1.14"><![CDATA[<b>1.14</b><br/>\n\u2022 SQL export - saved last selected wrapper for names<br/>\n\u2022 Renamed "row" to "column"<br/>\n\u2022 Added "unsigned" option for numeric types for MySql<br/>\n\u2022 Changed intro<br/>\n\u2022 Added answer for some questions inside app<br/>\n\u2022 Added some hints<br/>\n\u2022 Added "Delete" option into a structure context menu<br/>\n\<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13.2"><![CDATA[<b>1.13.2</b><br/>\n\u2022 Fixed bug with duplicate data types<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13.1"><![CDATA[<b>1.13.1</b><br/>\n\u2022 Fixed bug with access to file structure on some devices (export image, export SQL into a file, load backup)<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.13"><![CDATA[<b>1.13</b><br/>\n\u2022 Added tables/rows description into export SQL<br/>\n\u2022 Added possibility to hide data type<br/>\n\u2022 Fixed SQL code style during export<br/>\n\u2022 Added ENUM specification<br/>\n\u2022 Added possibility to export in SQL one table<br/>\n\u2022 Allowed strings without a primary key to be set as a foreign key<br/>\n\u2022 Fixed viewing in image export dialogs/SQL<br/>\n\u2022 Fixed strings<br/>\n\u2022 Bugs fixed<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.12"><![CDATA[<b>1.12</b><br/>\n\u2022 Added search<br/>\n\u2022 Fixed strings<br/>\n\u2022 Added option off the double tap for exit<br/>\n\u2022 Set target SDK 29<br/>\n\u2022 Bugs fixed<br/>\n<br/><br/>]]></string>
+    <string name="release_notes_1.11"><![CDATA[<b>1.11</b><br/>\n\u2022 Added go to next field during editing<br/>\n\u2022 Added \"Paste\" button into import SQL dialog<br/>\n\u2022 Added stick to grid possibility<br/>\n\u2022 Added possibility set grid cell size<br/>\n\u2022 Fixed enter in description fields<br/>\n\u2022 Added RDBMS select<br/>\n\u2022 Added export into PostgreSQL<br/>\n\u2022 Some refactor<br/>\n\u2022 Added some data types<br/>\n\u2022 Fixed strings<br/>\n\u2022 Added Chinese/French translations<br/>\n\u2022 Added possibility for a clone of structure<br/>\n\u2022 Bugs fixed<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.10"><![CDATA[<b>1.10</b><br/>\n\u2022 Auto copy data type/size from primary key when you select row as Foreign(can turn off in settings)<br/>\n\u2022 Edited export image dialog (added extension, quality, export image using devices with low memory)<br/>\n\u2022 Can include drop table scripts in export<br/>\n\u2022 Export SQL into file<br/>\n\u2022 Can drag and drop(change positions) structures<br/>\n\u2022 Added default names for tables/rows (You can save table/row with empty field name and name will be generated automatically like table_2)<br/>\n\u2022 Added question before save/cancel/delete tables/rows… (can turn on/off each type question in settings)<br/>\n\u2022 Optimized for multi windows mode<br/>\n\u2022 Added some optimization for Samsung DEX<br/>\n\u2022 Added external mouse zoom action<br/>\n\u2022 Fixed reload activity after connect external mouse/keyboard<br/>\n\u2022 Fixed other bugs<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.9"><![CDATA[<b>1.9</b><br/>\n\u2022 Added description for rows (can show/hide in settings)<br/>\n\u2022 Added Notes<br/>\n\u2022 Disable select \"Allow NULL\" if primary key is selected<br/>\n\u2022 Added precision for some dat types<br/>\n\u2022 SQL export(select language SQLite/MySql, added wrapper options)<br/>\n\u2022 Possibility to change arrow dirrection<br/>\n\u2022 Added possibility to support project<br/>\n\u2022 Fixed bug with change position rows<br/>\n\u2022 Other bugs fixed<br/>\n\u2022 Optimization(make some faster)<br/>\n<br/><br/>\n]]></string>
+    <string name="release_notes_1.8"><![CDATA[<b>1.8</b><br/>\n\u2022 Added themes<br/>\n\u2022 Showed restriction value near data type<br/>\n\u2022 Allowed set foreign keys as primary<br/>\n\u2022 Added auto-saving by timer (can off it in settings)<br/>\n\u2022 Added autosave before exit (can off it in settings)<br/>\n\u2022 Changed settings window<br/>\n\u2022 Changed SQL export code formatter<br/>\n\u2022 Added new DataTypes<br/>\n\u2022 Added icons into \"Information Dialog\"<br/>\n\u2022 Change position save and cancel buttons<br/>\n\u2022 Showed message about errors during import SQL <br/>\n\u2022 New tables will be created +- in center of the screen<br/>\n\u2022 Open structure at the same position like before exit (can off it in settings)<br/>\n\u2022 Added default colors for color picker<br/>\n\u2022 Tap on scale number(1.1x) in the map will set the zoom to 1x<br/>\n\u2022 Changed intro animations<br/>\n\u2022 Added new checkbox<br/>\n\u2022 Added some optimization for older phones<br/>\n\u2022 Fixed some bugs<br/><br/>\n]]></string>
+    <string name="release_notes_1.7"><![CDATA[<b>1.7</b><br/>\n\u2022 Edited \"Edit row\" window<br/>\n\u2022 Added choose row color<br/>\n\u2022 Added On Delete/On Update actions<br/>\n\u2022 Added export SQL parameters (Keys, Comments, Table position, Colors)<br/>\n\u2022 Fixed translate errors<br/>\n\u2022 Added release notes<br/>\n\u2022 Fixed bugs with Import/Export SQL<br/>\n\u2022 Fixed others bugs<br/><br/>]]></string>
+    <string name="release_notes_1.6"><![CDATA[<b>1.6</b><br/>\n\u2022 Added zoom<br/>\n\u2022 Fixed not null icon<br/>\n\u2022 Added info for keys in edit table dialog<br/>\n\u2022 Fixed bugs<br/><br/>\n]]></string>
+    <string name="release_notes_1.5"><![CDATA[<b>1.5</b><br/>\n\u2022 Changed design \"Edit table\" dialog(you can return old design in settings)<br/>\n\u2022 Bug fixed<br/><br/>\n]]></string>
+    <string name="release_notes_1.4"><![CDATA[<b>1.4</b><br/>\n\u2022 Added possibility to print tables description on the map<br/>\n\u2022 Bugs fixed<br/><br/>\n]]></string>
+    <string name="release_notes_1.3"><![CDATA[<b>1.3</b><br/>\n\u2022 Added possibility to change table title color<br/>\n\u2022 Bugs fixed<br/><br/>\n]]></string>
+    <string name="release_notes_1.2"><![CDATA[<b>1.2</b><br/>\n\u2022 Added intro<br/>\n\u2022 Bugs fixed<br/><br/>\n]]></string>
+    <string name="release_notes_1.1"><![CDATA[<b>1.1</b><br/>\n\u2022 Added possibility make backups<br/>\n\u2022 Bugs fixed<br/>\n]]></string>
+    <!-- //Release notes -->
+
 </resources>

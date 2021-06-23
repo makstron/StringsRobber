@@ -1,2 +1,4 @@
+include ':mylibrary'
+include ':sync_help'
 include ':app'
 rootProject.name = "StringsRobber"
